@@ -2,5 +2,120 @@
 various styles and layouts to enhance the visual appeal of my portfolio 
 website. */
 
+body{
+    font-family: "Syne", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    background-color: #0A0B0A;
+    color: #EDEFEA;
+}
+
+/* -- The below content is for navigation bar -- */
+nav{
+    position: sticky;
+    top: 0;
+    background-color: #0A0B0A;
+    opacity: 0.8;
+}
+
+/* -- The below content is for background grid design -- */
+.background-design{
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image:
+        radial-gradient(transparent 55%),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    background-size: 100% 100%, 48px 48px, 48px 48px;
+}
+
+/* -- Below code is for the content box -- */
+.content-box {
+    max-width: 1152px;
+    margin: 0 auto;
+    background-color: #EDEFEA;
+}
+
+/* --The Maintenance Page content is below this -- */
+
+.badge-pill {
+    color: #E3C77E;
+    background: rgba(227,199,126,.08);
+    border: 1px solid rgba(227,199,126,.08);
+    border-radius: 999px;
+    padding: 0 12px;
+    height: 30px;
+    font-family: "DM Mono", monospace;
+    font-weight: 12;
+    font-size: 12px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badge-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #E3C77E;
+    margin-right: 8px;
+}
+
+.main-box {
+    padding: 10px;
+    background-color: black;
+    align-items: center;
+    width: 40%;
+
+    right: 50%;
+}
+
+.maintenance-message {
+    font-size: 80px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.message-paragraph {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+
+.maintenance-terminal{
+    background-color: #111312;
+    border: 1px;
+    border-radius: 16px;
+    padding: 20px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+            "wdth" 100;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.btn {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+.btn:hover {
+    color: #6c5ce7;
+}
+
+
 
 
