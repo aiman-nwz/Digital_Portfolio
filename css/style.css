@@ -36,7 +36,6 @@ nav{
     margin-top: -40px;
     margin-bottom: 30px;
     margin-left: 980px;
-
     color: #EDEFEA;
     text-decoration: none;
 }
@@ -75,11 +74,13 @@ nav{
 
 .main-box {
     background-color: black;
+    padding: 20px;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
     line-height: 1;
     margin-top: 100px;
+    width: 40%;
 }
 .badge-pill {
     color: #E3C77E;
@@ -106,9 +107,10 @@ nav{
     font-size: 80px;
     font-weight: 800;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 .message-paragraph {
-    font-size: 1.2rem;
+    font-size: 21px;
     opacity: 0.9;
     margin-bottom: 30px;
     font-family: "IBM Plex Sans", sans-serif;
@@ -119,28 +121,98 @@ nav{
 
 .maintenance-terminal{
     background-color: #111312;
-    border: 1px;
+    border: 1px solid #2A2D2B;
     border-radius: 16px;
-    padding: 20px;
+    font-family: "DM Mono", monospace;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.maintenance-terminal-top{
+    display: flex;
+    padding: 12px 16px;
+    align-items: center;
+    gap: 10px;
+    color: #959B94;
 }
 
+.circle-terminal-btns{
+    display: flex;
+}
+.circle-left{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #959B94;
+    margin-left: 1px;
+}
+.circle-center{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #959B94;
+    margin-left: 8px;
+}
+.circle-right{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #E3C77E;
+    margin-left: 8px;
+}
+.maintenance-terminal-body{
+    padding: 14px 16px;
+    border-top: 1px solid #2A2D2B;
+    line-height: 1.7;
+    gap: 10px;
+}
+span.green{
+    color: #7FFF6E;
+}
+span.amber{
+    color: #E3C77E;
+}
+
+span.links-title{
+    display: flex;
+    padding: 20px 0;
+    font-weight: normal;
+    font-size: 12px;
+    color: #959B94;
+}
 .links {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    gap: 5px;
+    padding: 0;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 250;
+    font-style: normal;
+    max-width: 520px;
 }
+
 .btn {
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: white;
-    border: 2px solid white;
-    padding: 10px 20px;
-    border-radius: 5px;
+    border: 1px solid #343A35;
+    padding: 12px 22px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+
+}
+.email-btn {
+    text-decoration: none;
+    background-color: #7FFF6E;
+    color: #111312;
+    border: 1px solid #343A35;
+    padding: 19px 25px;
+    border-radius: 8px;
     transition: all 0.3s ease;
     font-weight: bold;
 }
 .btn:hover {
-    color: #6c5ce7;
+    color: #7FFF6E;
 }
 
 
