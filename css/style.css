@@ -3,6 +3,7 @@ various styles and layouts to enhance the visual appeal of my portfolio
 website. */
 
 body{
+    margin: 0;
     font-family: "Syne", sans-serif;
     font-optical-sizing: auto;
     font-weight: bold;
@@ -12,34 +13,44 @@ body{
 }
 
 /* -- The below content is for navigation bar -- */
-nav{
+.header{
     position: sticky;
     top: 0;
-    background-color: #0A0B0A;
-    opacity: 0.92;
-    height: 20%;
+    z-index: 10;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 130px;
+    background-color: rgba(10, 11, 10, 0.6);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 .logo{
-    display: flex;
-    justify-content: center;
-    max-width: 52px;
+
+    width: 52px;
     border-radius: 10px;
-    margin-left: 130px;
+
 }
 .nav-links{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     gap: 20px;
     list-style: none;
-    max-width: 270px;
-    margin-top: -40px;
-    margin-bottom: 30px;
-    margin-left: 980px;
-    color: #EDEFEA;
-    text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
-.nav-links:active{
+.nav-links a{
+    text-decoration: none;
+    color: #EDEFEA;
+    font-family: "DM Mono", monospace;
+    font-size: 14px;
+    font-weight: 400;
+    transition: color 0.2s ease;
+}
+.nav-links a:active{
     color: #7FFF6E;
 }
 /* -- The below content is for background grid design -- */
