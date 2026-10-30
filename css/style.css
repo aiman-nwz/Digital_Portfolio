@@ -29,10 +29,8 @@ nav{
     border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 .logo{
-
     width: 52px;
     border-radius: 10px;
-
 }
 .nav-links{
     display: flex;
@@ -53,6 +51,7 @@ nav{
 .nav-links a:active{
     color: #7FFF6E;
 }
+
 /* -- The below content is for background grid design -- */
 .background-design{
     position: fixed;
@@ -84,13 +83,13 @@ nav{
 }*/
 
 .main-box {
-    background-color: black;
     padding: 20px;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
     line-height: 1;
     margin-top: 100px;
+    margin-bottom: 100px;
     width: 40%;
 }
 .badge-pill {
@@ -183,7 +182,6 @@ span.green{
 span.amber{
     color: #E3C77E;
 }
-
 span.links-title{
     display: flex;
     padding: 20px 0;
@@ -200,7 +198,6 @@ span.links-title{
     font-style: normal;
     max-width: 520px;
 }
-
 .btn {
     display: flex;
     align-items: center;
@@ -210,7 +207,6 @@ span.links-title{
     padding: 12px 22px;
     border-radius: 8px;
     transition: all 0.3s ease;
-
 }
 .email-btn {
     text-decoration: none;
@@ -228,4 +224,38 @@ span.links-title{
 
 
 
+/* -- The below script is for footer -- */
+.footer-maintenance {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111312;
+    color: #959B94;
+    padding: 2px 130px;
+    text-align: center;
+    height: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06)
+}
+.footer-text {
+    font-size: 11px;
+    font-family: "DM Mono", sans-serif;
+    font-weight: normal;
+}
+span.separator{
+    color: #4D544E;
+}
+span.footer-status{
+    color: #E3C77E;
+    font-size: 11px;
+    font-family: "DM Mono", sans-serif;
+    font-weight: normal;
+}
+span.footer-dot{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #E3C77E;
+    margin-right: 2px;
+}
 
