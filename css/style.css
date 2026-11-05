@@ -13,7 +13,7 @@ body{
 }
 
 /* -- The below content is for navigation bar -- */
-.header{
+header{
     position: sticky;
     top: 0;
     z-index: 10;
@@ -52,6 +52,39 @@ nav{
     color: #7FFF6E;
 }
 
+/* -- Tablet -- */
+@media (max-width: 900px){
+    nav,
+    .footer-maintenance{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+/* -- Mobile -- */
+@media (max-width: 600px){
+    nav,
+    .footer-maintenance{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .footer-maintenance{
+        padding: 10px 20px;
+        gap: 12px;
+    }
+    .main-box{
+        padding: 20px;
+    }
+    .message-paragraph{
+        font-size: 17px;
+    }
+    body.maintenance-page{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
 /* -- The below content is for background grid design -- */
 .background-design{
     position: fixed;
@@ -74,23 +107,19 @@ nav{
 
 /* --The Maintenance Page content is below this -- */
 
-/*maintenance-page{
-    margin: 0;
+body.maintenance-page{
     min-height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}*/
+    flex-direction: column;
+}
 
 .main-box {
     padding: 20px;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 100px auto;
     line-height: 1;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    width: 40%;
+    width: 100%;
+    max-width: 640px;
+    box-sizing: border-box;
 }
 .badge-pill {
     color: #E3C77E;
@@ -114,7 +143,7 @@ nav{
     margin-right: 8px;
 }
 .maintenance-message {
-    font-size: 80px;
+    font-size: clamp(40px, 8vw, 80px);
     font-weight: 800;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -174,7 +203,8 @@ nav{
     padding: 14px 16px;
     border-top: 1px solid #2A2D2B;
     line-height: 1.7;
-    gap: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 span.green{
     color: #7FFF6E;
@@ -191,6 +221,7 @@ span.links-title{
 }
 .links {
     display: flex;
+    flex-wrap: wrap;
     gap: 5px;
     padding: 0;
     font-family: "IBM Plex Sans", sans-serif;
@@ -233,7 +264,9 @@ span.links-title{
     color: #959B94;
     padding: 2px 130px;
     text-align: center;
-    height: 30px;
+    height: auto;
+    min-height: 30px;
+    margin-top: auto;
     border-top: 1px solid rgba(255, 255, 255, 0.06)
 }
 .footer-text {
