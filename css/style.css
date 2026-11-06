@@ -32,6 +32,14 @@ nav{
     width: 52px;
     border-radius: 10px;
 }
+span.site-name{
+    padding-left: 0;
+    margin: 0;
+    font-family: "DM Mono", monospace;
+    font-size: 14px;
+    font-weight: 400;
+    color: #959B94;
+}
 .nav-links{
     display: flex;
     justify-content: center;
@@ -67,12 +75,168 @@ nav{
     background-size: 100% 100%, 48px 48px, 48px 48px;
 }
 
-/* -- Below code is for the content box -- */
+/* -- Below code is for the index page -- */
 .content-box {
+    display: flex;
+    flex-direction: row;
     max-width: 1152px;
+    padding: 10px 24px;
     margin: 0 auto;
-    background-color: #EDEFEA;
+    background-color: grey;
 }
+article{
+    display: flex;
+    padding: 10px;
+    gap: 20px;
+}
+.main-information{
+    display: inline-block;
+    background-color: black;
+    line-height: 0.8;
+    max-width: 600px;
+}
+.main-information h4{
+    font-family: "DM Mono", monospace;
+    font-size: 14px;
+    font-weight: 400;
+    color: #959B94;
+}
+.main-information h1{
+    font-family: "Syne", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 80px;
+    font-weight: 800;
+    gap: 2px;
+    color: #EDEFEA;
+}
+.main-information p{
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    max-width: 520px;
+    color: #C9CEC7;
+}
+.index-badge-pill {
+    color: #7FFF6E;
+    background: rgba(127,255,110,.08);
+    border: 1px solid rgba(127,255,110,.35);
+    border-radius: 999px;
+    padding: 5px 12px;
+    height: 30px;
+    font-family: "DM Mono", monospace;
+    font-weight: 12;
+    font-size: 12px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.index-badge-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #7FFF6E;
+    margin-right: 8px;
+}
+.index-location{
+    color: #959B94;
+    font-family: "DM Mono", monospace;
+    padding: 0 12px;
+    font-weight: 12;
+    font-size: 13px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+/* Right hand Terminal code*/
+.index-terminal{
+    display: inline-block;
+    background-color: #111312;
+    border: 1px solid #2A2D2B;
+    border-radius: 16px;
+    font-family: "DM Mono", monospace;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 650px;
+}
+.index-terminal-top{
+    display: flex;
+    padding: 12px 16px;
+    align-items: center;
+    gap: 10px;
+    color: #959B94;
+}
+span.terminal-text-right{
+    display: flex;
+    padding: 0 10px;
+    margin-left: auto;
+    white-space: nowrap;
+}
+.circle-terminal-btns{
+    display: flex;
+}
+.circle-left{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #959B94;
+    margin-left: 1px;
+}
+.circle-center{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #959B94;
+    margin-left: 8px;
+}
+.circle-green-right{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #7FFF6E;
+    margin-left: 8px;
+}
+.index-terminal-body{
+    padding: 14px 16px;
+    padding-bottom: 82px;
+    border-top: 1px solid #2A2D2B;
+    line-height: 1.7;
+    color: #959B94;
+    font-size: 14px;
+}
+span.green{
+    color: #7FFF6E;
+}
+.index-terminal-bottom{
+    display: flex;
+    padding: 12px 16px;
+    align-items: center;
+    color: #959B94;
+    border-top: 1px solid #2A2D2B;
+}
+.terminal-button{
+    font-family: "IBM Plex Mono", monospace;
+    border: 1px solid #343A35;
+    color: #C9CEC7;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: transparent;
+    margin: 0;
+    font-size: 14px;
+}
+.terminal-button:active{
+    color: #0A0B0A;
+    background-color: #7FFF6E;
+}
+
+
+
 
 /* --The Maintenance Page content is below this -- */
 
