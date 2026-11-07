@@ -11,6 +11,19 @@ body{
     background-color: #0A0B0A;
     color: #EDEFEA;
 }
+main{
+    display: flex;
+    flex-direction: column;
+}
+hr{
+    width: 100vw;
+    background-color: #242825;
+    height: 2.5px;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    border: none;
+}
 
 /* -- The below content is for navigation bar -- */
 header{
@@ -77,12 +90,12 @@ span.site-name{
 
 /* -- Below code is for the index page -- */
 .content-box {
-    display: flex;
+    display: inline-block;
     flex-direction: row;
     max-width: 1152px;
     padding: 10px 24px;
     margin: 0 auto;
-    background-color: grey;
+    background-color: ;
 }
 article{
     display: flex;
@@ -91,7 +104,6 @@ article{
 }
 .main-information{
     display: inline-block;
-    background-color: black;
     line-height: 0.8;
     max-width: 600px;
 }
@@ -150,8 +162,6 @@ article{
     align-items: center;
     gap: 10px;
 }
-
-
 
 /* Right hand Terminal code*/
 .index-terminal{
@@ -237,7 +247,193 @@ span.green{
     background-color: #7FFF6E;
 }
 
+/* This code is for the learning part*/
+.main-article-2{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 100px;
+}
+.main-information-2{
+    display: inline-block;
+    line-height: 0.8;
+    max-width: 600px;
+    padding: 10px 0;
+    margin-left: 0;
+    gap: 80px;
+}
+.main-information-learning{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 700px;
+    margin: 15px 0;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px;
+    font-weight: 100;
+    border: 1px solid #2A2D2B;
+    border-radius: 12px;
+    background-color: #111312;
+}
+.main-information-learning h3{
+    color: #959B94;
+    font-size: 12px;
+}
+.learning-sub-heading{
+    border-right: 1px solid #2A2D2B;
+    padding: 10px 20px;
+    max-width: 200px;
+}
+.learning-sub-heading-last{
+    padding: 10px 20px;
+    max-width: 180px;
+}
+.index-study-terminal{
+    display: inline-block;
+    background-color: #111312;
+    border: 1px solid #2A2D2B;
+    border-radius: 16px;
+    font-family: "DM Mono", monospace;
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 650px;
 
+}
+.study-terminal-top{
+    display: flex;
+    padding: 12px 10px;
+    align-items: center;
+    gap: 10px;
+    color: #959B94;
+}
+.index-study-terminal .terminal-text-right{
+    color: #7FFF6E;
+    padding: 0;
+}
+.index-study-terminal .terminal-text-left{
+    padding: 0 10px;
+}
+.study-terminal-body{
+    display: flex;
+    gap: 10px;
+}
+.study-terminal-body ul{
+    display: inline-block;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    color: #959B94;
+}
+.study-terminal-body ul li{
+    margin-bottom: 10px;
+    padding: 0 10px;
+    gap: 10px;
+}
+.study-terminal-body ul.study-terminal-state li{
+    padding-left: 40px;
+}
+.study-terminal-body ul.study-terminal-state h4{
+    padding-left: 60px;
+}
+.study-terminal-body ul h4{
+    position: relative;
+    padding: 10px;
+    font-weight: 100;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+/* -- Below is the work section code -- */
+.work-heading{
+    padding: 10px;
+}
+.work-heading h2{
+    font-family: 'DM Mono', monospace;
+    color: #959B94;
+    font-size: 12px;
+    font-weight: 100;
+}
+.main-work{
+    display: flex;
+    padding: 20px 10px;
+    margin: 0;
+    width: 1146px;
+}
+.main-work h1{
+    display: inline-block;
+    font-family: "Syne", sans-serif;
+    color: #EDEFEA;
+    font-size: 44px;
+    padding: 0;
+    margin: 0;
+}
+.work-project-links{
+    display: inline-blocks;
+    margin-left: auto;
+    margin-top: 15px;
+}
+
+.project-card{
+    display: inline-block;
+    background-color: #111312;
+    border-radius: 16px;
+    border: 1px solid #242825;
+    max-width: 380px;
+    padding: 20px;
+}
+span.card-text-left{
+    color: #959B94;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    font-weight: 100;
+}
+span.card-text-right{
+    display: inline-block;
+    float: right;
+    padding: 0 10px;
+    margin-left: auto;
+    white-space: nowrap;
+    color: #E3C77E;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    font-weight: 100;
+}
+span.card-text-right-planned{
+    display: inline-block;
+    float: right;
+    padding: 0 10px;
+    margin-left: auto;
+    white-space: nowrap;
+    color: #959B94;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    font-weight: 100;
+}
+.project-card h2{
+    color: #EDEFEA;
+    font-family: "Syne", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+}
+.project-card p{
+    color: #B9BEB7;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 350px;
+}
+span.card-link{
+    display: inline-block;
+    margin-left: auto;
+    white-space: nowrap;
+    color: #7FFF6E;
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    font-weight: 100;
+}
+span.card-link a{
+    text-decoration: none;
+    color: #7FFF6E;
+}
 
 
 /* --The Maintenance Page content is below this -- */
