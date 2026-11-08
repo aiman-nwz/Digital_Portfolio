@@ -512,6 +512,17 @@ span.card-link a{
     margin-left: 0 auto;
 }
 
+/* -- Below is the code for Email confirmation -- */
+.email-confirmation{
+    display: flex;
+    flex-direction: column;
+    max-width: 950px;
+    padding: 50px 10px;
+}
+
+
+
+
 /* --The Maintenance Page content is below this -- */
 
 body.maintenance-page{
