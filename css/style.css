@@ -16,7 +16,7 @@ main{
     flex-direction: column;
 }
 hr{
-    width: 100vw;
+    width: 100%;
     background-color: #242825;
     height: 2.5px;
     bottom: 0;
@@ -93,9 +93,8 @@ span.site-name{
     display: inline-block;
     flex-direction: row;
     max-width: 1152px;
-    padding: 10px 24px;
+    padding: 80px 24px;
     margin: 0 auto;
-    background-color: ;
 }
 article{
     display: flex;
@@ -278,6 +277,9 @@ span.green{
     color: #959B94;
     font-size: 12px;
 }
+.main-information-learning p{
+    line-height: 1.1;
+}
 .learning-sub-heading{
     border-right: 1px solid #2A2D2B;
     padding: 10px 20px;
@@ -343,22 +345,22 @@ span.green{
 }
 
 /* -- Below is the work section code -- */
-.work-heading{
+.index-headings{
     padding: 10px;
 }
-.work-heading h2{
+.index-headings h2{
     font-family: 'DM Mono', monospace;
     color: #959B94;
     font-size: 12px;
     font-weight: 100;
 }
-.main-work{
+.headings-title{
     display: flex;
     padding: 20px 10px;
     margin: 0;
     width: 1146px;
 }
-.main-work h1{
+.headings-title h1{
     display: inline-block;
     font-family: "Syne", sans-serif;
     color: #EDEFEA;
@@ -435,6 +437,80 @@ span.card-link a{
     color: #7FFF6E;
 }
 
+/* -- Below is the code for Stack & Path section -- */
+.stack-title{
+    max-width: 600px;
+}
+
+.index-skills-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 10px;
+    font-family: "DM Mono", regular;
+    font-size: 13px;
+    font-weight: 100;
+    color: #EDEFEA;
+    max-width: 600px;
+}
+.skills-info{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #EDEFEA;
+    border: 1px solid #343A35;
+    padding: 12px 22px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background-color: #242825;
+}
+.next-skills-info{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #959B94;
+    border: 1px dashed #343A35;
+    padding: 12px 22px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background-color: #111312;
+}
+.skills-info-paragraph{
+    font-family: "IBM Plex Sans";
+    font-size: 18px;
+    font-weight: 100;
+    color: #B9BEB7;
+    max-width: 500px;
+}
+
+/* -- Below is the code for the PING section -- */
+.ping-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px 30px;
+    gap: 300px;
+    border-radius: 24px;
+    background-color: #111312;
+    border: 1px solid #2A2D2B;
+}
+.ping-paragraph{
+    font-family: "IBM Plex Sans";
+    font-size: 16px;
+    font-weight: 400;
+    color: #B9BEB7;
+}
+.stack-title{
+    font-family: "Syne";
+    font-size: 36px;
+    color: #EDEFEA;
+}
+.ping-box .links{
+    display: flex;
+    gap: 10px;
+    font-size: 15px;
+    margin-left: 0 auto;
+}
 
 /* --The Maintenance Page content is below this -- */
 
