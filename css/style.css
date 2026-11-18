@@ -520,8 +520,166 @@ span.card-link a{
     padding: 50px 10px;
 }
 
+/* -- Below is the code for Contact section -- */
+.contact-page{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.contact-headings{
+    padding: 10px;
+}
+.contact-headings h2{
+    font-family: 'DM Mono', monospace;
+    color: #959B94;
+    font-size: 14px;
+    font-weight: 100;
+}
+.contact-headings-title{
+    display: flex;
+    padding: 20px 10px;
+    margin: 0;
+    width: 1146px;
+}
+.contact-headings-title h1{
+    display: inline-block;
+    font-family: "Syne", sans-serif;
+    color: #EDEFEA;
+    font-size: 56px;
+    font-weight: 800;
+    padding: 0;
+    margin: 0;
+}
+.contact-card-left{
+    display: inline-block;
+    max-width: 580px;
+    padding: 20px;
+}
+.card-text-left{
+    font-size: 16px;
+}
+.contact-card-left p{
+    color: #B9BEB7;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    width: 500px;
+}
+.contact-project-links{
+    display: inline-blocks;
+    background-color: #111312;
+    border-radius: 12px;
+    border: 1px solid #242825;
+    font-family: "DM Mono", regular;
+    font-size: 14px;
+    font-weight: 100;
+    padding: 4px 18px;
+    margin-left: auto;
+    margin-top: 15px;
+}
+.project-btn{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+span.contact-text-right{
+    display: inline-block;
+    float: right;
+    margin-left: auto;
+    white-space: nowrap;
+}
+.project-btn:hover {
+    color: #7FFF6E;
+}
 
-
+.contact-card-right{
+    display: inline-block;
+    background-color: #111312;
+    border-radius: 16px;
+    border: 1px solid #242825;
+    max-width: 550px;
+    padding: 40px 20px;
+}
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 0 14px;
+    height: 48px;
+    border: 1px solid #242825;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    background-color: #0A0B0A;
+    font-family: "DM Mono", regular;
+    font-size: 15px;
+    font-weight: 100;
+    color: white;
+    resize: vertical;
+}
+input[type=email], textarea{
+    width: 100%;
+    padding: 14px 14px;
+    height: 48px;
+    border: 1px solid #242825;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    background-color: #0A0B0A;
+    font-family: "DM Mono", regular;
+    font-size: 15px;
+    font-weight: 100;
+    color: white;
+    resize: vertical;
+}
+select{
+    width: 100%;
+    padding: 0 14px;
+    height: 48px;
+    border: 1px solid #242825;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    background-color: #0A0B0A;
+    font-family: "DM Mono", regular;
+    font-size: 15px;
+    font-weight: 100;
+    color: white;
+    resize: vertical;
+}
+label{
+    font-family: "DM Mono", monospace;
+    font-weight: 100;
+    font-size: 12px;
+    color: #959B94;
+}
+form p{
+    display: inline-block;
+    font-family: "DM Mono", monospace;
+    font-weight: 100;
+    font-size: 12px;
+    color: #959B94;
+}
+input[type=submit]{
+    display: inline-block;
+    float: right;
+    margin-right: 6px;
+    white-space: nowrap;
+    font-family: "IBM Plex Sans";
+    font-size: 15px;
+    font-weight: 700;
+    color: #0A0B0A;
+    padding: 20px;
+    background-color: #7FFF6E;
+    border: 1px solid #242825;
+    border-radius: 8px;
+    cursor: pointer;
+}
 
 /* --The Maintenance Page content is below this -- */
 
