@@ -25,6 +25,9 @@ hr{
     border: none;
 }
 
+
+
+
 /* -- The below content is for navigation bar -- */
 header{
     position: sticky;
@@ -75,6 +78,8 @@ span.site-name{
 
 
 
+
+
 /* -- The below content is for background grid design -- */
 .background-design{
     position: fixed;
@@ -87,6 +92,11 @@ span.site-name{
         linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
     background-size: 100% 100%, 48px 48px, 48px 48px;
 }
+
+
+
+
+
 
 /* -- Below code is for the index page -- */
 .content-box {
@@ -520,7 +530,217 @@ span.card-link a{
     padding: 50px 10px;
 }
 
-/* -- Below is the code for Contact section -- */
+
+
+
+
+/* -- Below is the code for about page -- */
+.about-headings-title{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    margin: 0;
+    width: 1146px;
+}
+.about-headings-title h1{
+    display: inline-block;
+    font-family: "Syne", sans-serif;
+    color: #EDEFEA;
+    font-size: 56px;
+    font-weight: 800;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+.about-headings-title p{
+    display: inline-block;
+    font-family: "IBM Plex Sans";
+    color: #B9BEB7;
+    font-size: 17px;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    max-width: 50%;
+}
+.about-card{
+    display: inline-block;
+    background-color: #111312;
+    border-radius: 16px;
+    border: 1px solid #242825;
+    max-width: 380px;
+    padding: 20px;
+    width: 30%;
+}
+span.about-card-text-left{
+    color: #959B94;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    font-weight: 100;
+}
+span.about-card-text-right{
+    display: inline-block;
+    float: right;
+    padding: 0 10px;
+    margin-left: auto;
+    white-space: nowrap;
+    color: #959B94;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    font-weight: 100;
+}
+.about-card p{
+    color: #EDEFEA;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 350px;
+    border-bottom: 1px solid #242825;
+    padding-bottom: 10px;
+}
+.learning-about-card{
+    display: inline-block;
+    background-color: #0A0B0A;
+    border-radius: 16px;
+    border: 1px dashed #343A35;
+    max-width: 380px;
+    padding: 20px;
+    width: 30%;
+}
+.learning-about-card p{
+    color: #EDEFEA;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 350px;
+    border-bottom: 1px solid #242825;
+    padding-bottom: 10px;
+}
+span.about-card-text-green-right{
+    display: inline-block;
+    float: right;
+    padding: 0 10px;
+    margin-left: auto;
+    white-space: nowrap;
+    color: #7FFF6E;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    font-weight: 100;
+}
+p.last-line{
+    border-bottom: none;
+}
+
+h1.ping-title{
+    font-size: 48px;
+}
+.about-download-link{
+    display: inline-block;
+    margin-left: 0;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #242825;
+}
+
+
+
+.path-card{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 100%;
+    border-bottom: 1px solid #242825;
+    padding: 30px 10px;
+
+}
+span.path-date{
+    display: flex;
+    float: left;
+    color: #959B94;
+    font-family: "DM Mono", regular;
+    font-size: 13px;
+    font-weight: 200;
+    width: 100px;
+}
+span.path-status{
+    display: flex;
+    float: right;
+    justify-content: center;
+    padding: 5px 10px;
+    color: #7FFF6E;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    font-weight: 100;
+    border: 1px solid #7FFF6E;
+    border-radius: 6px;
+    width: 50px;
+}
+span.path-status-grey{
+    display: flex;
+    float: right;
+    padding: 5px 10px;
+    color: #C9CEC7;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    font-weight: 100;
+    border: 1px solid #C9CEC7;
+    border-radius: 6px;
+    height: 15px;
+}
+span.path-status-amber{
+    display: flex;
+    float: right;
+    padding: 5px 10px;
+    color: #E3C77E;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    font-weight: 100;
+    border: 1px solid #E3C77E;
+    border-radius: 6px;
+    height: 15px;
+}
+.path-card p{
+    display: inline-block;
+    color: #EDEFEA;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    max-width: 900px;
+}
+span.path-card-title{
+    display: flex;
+    font-family: Syne;
+    font-size: 22px;
+    font-weight: 600;
+}
+span.path-card-organisation{
+    display: flex;
+    color: #959B94;
+    font-size: 15px;
+    font-weight: 400;
+
+}
+span.path-description{
+    display: flex;
+    color: #C9CEC7;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+h1.about-ping-title{
+    font-family: "Syne";
+    font-size: 22px;
+    color: #EDEFEA;
+    max-width: 600px;
+}
+
+
+
+
+
+/* -- Below is the code for Contact page -- */
 .contact-page{
     min-height: 100vh;
     display: flex;
