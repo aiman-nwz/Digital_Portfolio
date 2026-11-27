@@ -901,6 +901,17 @@ input[type=submit]{
     cursor: pointer;
 }
 
+
+
+
+/* -- Coming Soon CSS is written below -- */
+
+span.grey{
+    color: #959B94;
+}
+
+
+
 /* --The Maintenance Page content is below this -- */
 
 body.maintenance-page{
