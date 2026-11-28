@@ -560,7 +560,7 @@ span.card-link a{
     font-weight: 300;
     padding: 0;
     margin: 0;
-    max-width: 50%;
+    width: 50%;
 }
 .about-card{
     display: inline-block;
@@ -649,7 +649,6 @@ h1.ping-title{
     width: 100%;
     border-bottom: 1px solid #242825;
     padding: 30px 10px;
-
 }
 span.path-date{
     display: flex;
@@ -1127,6 +1126,7 @@ span.footer-maintenance-dot{
         padding-left: 40px;
         padding-right: 40px;
     }
+
 }
 
 /* -- Mobile -- */
@@ -1148,5 +1148,135 @@ span.footer-maintenance-dot{
     body.maintenance-page{
         margin: 0;
         padding: 0;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .content-box {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 10px;
+        margin: 0;
+    }
+    article{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        padding: 5px;
+        margin: 0;
+        gap: 20px;
+    }
+
+
+/* -- This is the code for mobile index section -- */
+
+    /* Code for introduction section of index page*/
+
+    .main-information{
+        max-width: 100%;
+    }
+    .main-information h4{
+        font-size: 11px;
+    }
+    .main-information h1{
+        font-size: 68px;
+    }
+    .main-information p{
+        font-size: 18px;
+    }
+    .index-message-card{
+        gap: 10px;
+    }
+    .index-location{
+        padding-top: 10px;
+    }
+    .index-terminal{
+        width: 100%;
+    }
+    .index-terminal-bottom{
+        display: flex;
+        padding: 12px 16px;
+    }
+    .terminal-button{
+        font-size: 12px;
+    }
+    .main-article-2{
+        display: flex;
+        flex-direction: column;
+    }
+    .headings-title{
+        display: inline-block;
+        margin: 0;
+        padding: 5px;
+    }
+    .headings-title h1{
+        font-size: 30px;
+    }
+    .index-skills-box{
+        padding: 20px 5px;
+        max-width: 100%;
+    }
+    .ping-box{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 10px;
+    }
+
+
+/* -- This below code is for about (stack & path) page in mobile view -- */
+
+
+
+    .about-headings-title{
+        width: 100%;
+        padding: 5px;
+    }
+    .about-headings-title h1{
+        font-size: 40px;
+    }
+    .about-headings-title p{
+        width: 100%;
+    }
+    .about-card{
+        width: 100%;
+    }
+    .learning-about-card{
+        width: 100%;
+    }
+    h1.ping-title{
+        font-size: 38px;
+    }
+    .path-card{
+        flex-direction: column;
+        gap: 40px;
+        width: 100%;
+        padding: 30px 5px;
+    }
+    span.path-date{
+        width: 40%;
+    }
+
+
+
+
+
+
+/* -- This below code is for contact page in mobile view -- */
+
+    .contact-headings-title{
+        width: 100%;
+        padding: 5px;
+    }
+    .contact-headings-title h1{
+        font-size: 34px;
+    }
+    .contact-card-left{
+        padding: 5px;
+        max-width: 100%;
+    }
+    .contact-card-left p{
+        max-width: 100%;
     }
 }
